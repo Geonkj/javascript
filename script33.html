@@ -1,0 +1,35 @@
+<html>
+<head>
+	<title></title>
+	<style>
+	.validation{margin-left: 200px;background-color: 00FFFF;margin-right: 900px;width: 400px;}
+	#btn{margin-left: 80px;}
+	</style>
+	<script>
+	function check_valid()
+	{
+		var graduate=document.getElementById("check_grad").checked;
+		var Post=document.getElementById("check_post").checked;
+		if (graduate==0 && Post==0) 
+			{
+				document.getElementById("pop").innerHTML="please choose your Qualification";
+				return false;
+			}
+			else{
+				return true;
+			}
+	}
+	</script>
+
+</head>
+<body>
+	<div class="validation">
+		<form>
+	<h3>Check Box Validation</h3>
+	Qualification:<input type="checkbox" name="checking" value="Graduate" id="check_grad"/>Graduate<input type="checkbox" name="checking" value="Post Graduate" id="check_post"/>Post graduate<br/><br/>
+	<p id="pop" style="color:red;"></p>
+	<input id="btn" type="button" value="submit" onclick="check_valid();"/>
+
+
+</body>
+</html>

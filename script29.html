@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title></title>
+	<script>
+	function login()
+	{
+		var welcome=document.getElementById("welcome");
+		welcome.innerHTML="Login Successfull";
+	}
+
+	</script>
+</head>
+<body>
+	<p id="welcome"></p>
+	<form method="post" action="scriptex.html" onsubmit="return login();">
+	Username :<input type="text" id="name"/>
+	Password :<input type="password" id="password"/>
+	<input type="submit" value="login"/>
+</form>
+
+</body>
+</html>

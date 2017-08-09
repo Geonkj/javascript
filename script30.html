@@ -1,0 +1,71 @@
+<html>
+<head>
+	<title></title>
+	<style>
+	.register_form{background-color: #00ffff;width: 800px;}
+
+
+	</style>
+	<script>
+	function valid(){
+		
+		 var name=document.getElementById("txt_name").value;
+		 var persnl_address=document.getElementById("txt_addr").value;
+		 var mail=document.getElementById("txt_email").value;
+		 var mob=document.getElementById("txt_mobile").value;
+		 var pssw=document.getElementById("txt_psswrd").value;
+		 var cnf=document.getElementById("txt_cnfrm").value;
+		 if (name=="") {
+		 	document.getElementById("lbl_msg_name").innerHTML="Enter your name";
+		 	return false;
+		 }
+		 if (persnl_address=="") {
+		 	document.getElementById("lbl_msg_addrs").innerHTML="Enter your Address";
+		 	return false;
+		 }
+		 if (mail=="") {
+		 	document.getElementById("lbl_msg_mail").innerHTML="Enter your EmailId";
+		 	return false;
+		 }
+		 if (mob=="") {
+		 	document.getElementById("lbl_msg_mbil").innerHTML="Enter your MobileNo";
+		 	return false;
+		 }
+		 if (pssw=="") {
+		 	document.getElementById("lbl_msg_psw").innerHTML="Enter your password";
+		 	
+		 	return false;
+		 }
+		  if (cnf=="") {
+		 	document.getElementById("lbl_msg_cnfpsw").innerHTML="Confirm your password";
+		 	return false;
+		 }
+		};
+		 
+
+
+
+
+	</script>
+</head>
+<body>
+	<table>
+	<div class="register_form">
+		<form>
+			<h3 style="margin-left:132px;">Student Register Form</h3>
+
+			Name                <input id="txt_name" style="margin-left:132px;" type="text"/><label style="color:red" id="lbl_msg_name"></label><br/><br/>
+			Personal Address    <input id="txt_addr" style="margin-left:57px;" type="text"><label style="color:red" id="lbl_msg_addrs"></label><br/><br/>
+			EmailId             <input id="txt_email" style="margin-left:117px;"type="text"><label style="color:red" id="lbl_msg_mail"></label><br/><br/>
+			MobieNo             <input id="txt_mobile"style="margin-left:108px;"type="text"><label style="color:red" id="lbl_msg_mbil"></label><br/><br/>
+			Password            <input  id="txt_psswrd"style="margin-left:108px;" type"text"><label style="color:red" id="lbl_msg_psw"></label><br/><br/>
+			Confirm Password    <input id="txt_cnfrm" style="margin-left:50px;"type="text"><label style="color:red" id="lbl_msg_cnfpsw"></label><br/><br/>
+			<input  style="margin-left:100px;"type="submit" value="submit form" onClick="return valid()"/>
+		</form>
+		</div>
+
+		</form>
+	</table>
+
+</body>
+</html>

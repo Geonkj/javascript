@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title></title>
+	<style>
+	.gender_form{margin-left: 200px;background-color: 00FFFF;margin-right: 900px;}
+
+	</style>
+	<script>
+	function form_vali()
+	{
+		var male=document.getElementById("male_check").checked;
+		var female=document.getElementById("female_check").checked;
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<div class="gender_form">
+	<h3>Radio Button Validation</h3>
+	Gender:<input type="radio" name="gender" id="male_check"/>Male
+	<input type="radio" name="gender" id="female_check"/>female<br/>
+	<input type="submit" onclick="form_vali();">
+    </form>
+</div>
+</body>
+</html>

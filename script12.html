@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title></title>
+	<script>
+	var ins="inside ";
+	var out="outside ";
+	function scope1(){
+
+     document.write("<h2>Global</h2><br/>"+"apple "+ ins+"function"+"<br/>");
+ }
+
+     scope1();  
+
+	
+	document.write("apple "+out+"function"+"<br/>");
+	
+   function scope2(){
+    var ins="inside ";
+    document.write("<h2>Local</h2><br/>"+"apple "+ins+"function <br/>");
+
+   } 
+   scope2();
+
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>
